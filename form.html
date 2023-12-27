@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form>
+        <label for="name">Name : </label>
+        <input id="name" type="text" required><br>
+        <label for="rollno">Roll No:</label>
+        <input type="text" id="rollno" required><br>
+        <label for="age">Age : </label>
+        <input type="text" id="age" required><br>
+        <label for="grade">Grade : </label>
+        <input type="text" id="grade" required><br><br>
+        <button onclick="save()">Save</button><br><br>
+    </form>
+    <button onclick="filter()">Filter</button><br><br>
+    <button onclick ="sortGrades()">Sort</button><br><br>
+    <table id="student-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll_No</th>
+                <th>Age</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody id="student-table-body"></tbody>
+    </table><br><br>
+    <div id="filter-data">
+    </div>
+    <div id = one>
+        <button id="two">Event</button>
+    </div>
+
+</body> 
+
+</html>
+
